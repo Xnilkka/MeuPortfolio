@@ -1,0 +1,151 @@
+/* Importando fonte */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #121212;
+    color: #fff;
+    text-align: center;
+}
+
+/* HEADER */
+header {
+    background-color: #1f1f1f;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+}
+
+header h1 {
+    font-size: 24px;
+}
+
+/* MENU RESPONSIVO */
+nav ul {
+    list-style: none;
+    display: flex; /* Ativa Flexbox */
+    justify-content: center;
+    flex-wrap: wrap; /* Quebra linha em telas pequenas */
+    margin-top: 10px;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 10px;
+}
+
+nav ul li a {
+    color: #00c3ff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #00ff99;
+}
+
+/* INTRODUÇÃO */
+.intro {
+    padding: 50px 20px;
+}
+
+/* PROJETOS */
+.projetos {
+    padding: 50px 20px;
+    background-color: #1a1a1a;
+}
+
+.projetos h2 {
+    margin-bottom: 20px;
+}
+
+/* PROJETOS USANDO FLEXBOX */
+.projetos-container {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os itens quebrem de linha */
+    justify-content: center;
+    gap: 20px;
+}
+
+.projeto {
+    background: #2a2a2a;
+    padding: 20px;
+    border-radius: 10px;
+    width: 280px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.projeto:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 255, 153, 0.5);
+}
+
+/* CONTATO */
+.contato {
+    padding: 50px 20px;
+}
+
+.botao-contato {
+    display: inline-block;
+    background: #00c3ff;
+    color: #121212;
+    padding: 12px 20px;
+    margin-top: 15px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out;
+}
+
+.botao-contato:hover {
+    background: #00ff99;
+}
+
+/* FOOTER */
+footer {
+    background: #1f1f1f;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+/* 🌟 RESPONSIVIDADE 🌟 */
+@media (max-width: 768px) {
+    /* Deixar os projetos em coluna quando a tela for pequena */
+    .projetos-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Ajustando a navegação para telas menores */
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul li {
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Reduzindo tamanho do header */
+    header h1 {
+        font-size: 18px;
+    }
+
+    /* Ajustando espaçamentos */
+    .intro, .projetos, .contato {
+        padding: 30px 10px;
+    }
+
+    /* Reduzindo o tamanho dos projetos */
+    .projeto {
+        width: 90%;
+    }
+}
