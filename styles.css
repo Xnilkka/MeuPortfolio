@@ -28,9 +28,9 @@ header h1 {
 /* MENU RESPONSIVO */
 nav ul {
     list-style: none;
-    display: flex; /* Ativa Flexbox */
+    display: flex;
     justify-content: center;
-    flex-wrap: wrap; /* Quebra linha em telas pequenas */
+    flex-wrap: wrap;
     margin-top: 10px;
     padding: 0;
 }
@@ -65,10 +65,9 @@ nav ul li a:hover {
     margin-bottom: 20px;
 }
 
-/* PROJETOS USANDO FLEXBOX */
 .projetos-container {
     display: flex;
-    flex-wrap: wrap; /* Permite que os itens quebrem de linha */
+    flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
 }
@@ -84,6 +83,12 @@ nav ul li a:hover {
 .projeto:hover {
     transform: translateY(-5px);
     box-shadow: 0 4px 10px rgba(0, 255, 153, 0.5);
+}
+
+.projeto-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
 }
 
 /* CONTATO */
@@ -114,15 +119,12 @@ footer {
     margin-top: 20px;
 }
 
-/* 🌟 RESPONSIVIDADE 🌟 */
 @media (max-width: 768px) {
-    /* Deixar os projetos em coluna quando a tela for pequena */
     .projetos-container {
         flex-direction: column;
         align-items: center;
     }
 
-    /* Ajustando a navegação para telas menores */
     nav ul {
         flex-direction: column;
         text-align: center;
@@ -134,17 +136,14 @@ footer {
 }
 
 @media (max-width: 480px) {
-    /* Reduzindo tamanho do header */
     header h1 {
         font-size: 18px;
     }
 
-    /* Ajustando espaçamentos */
     .intro, .projetos, .contato {
         padding: 30px 10px;
     }
 
-    /* Reduzindo o tamanho dos projetos */
     .projeto {
         width: 90%;
     }
