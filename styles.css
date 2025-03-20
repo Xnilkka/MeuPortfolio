@@ -1,4 +1,4 @@
-/* Importando fonte */
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
 
 * {
@@ -14,7 +14,7 @@ body {
     text-align: center;
 }
 
-/* HEADER */
+
 header {
     background-color: #1f1f1f;
     padding: 20px;
@@ -25,7 +25,7 @@ header h1 {
     font-size: 24px;
 }
 
-/* MENU RESPONSIVO */
+
 nav ul {
     list-style: none;
     display: flex;
@@ -50,12 +50,12 @@ nav ul li a:hover {
     color: #00ff99;
 }
 
-/* INTRODUÇÃO */
+
 .intro {
     padding: 50px 20px;
 }
 
-/* PROJETOS */
+
 .projetos {
     padding: 50px 20px;
     background-color: #1a1a1a;
@@ -91,7 +91,7 @@ nav ul li a:hover {
     display: block;
 }
 
-/* CONTATO */
+
 .contato {
     padding: 50px 20px;
 }
@@ -112,7 +112,7 @@ nav ul li a:hover {
     background: #00ff99;
 }
 
-/* FOOTER */
+
 footer {
     background: #1f1f1f;
     padding: 15px;
